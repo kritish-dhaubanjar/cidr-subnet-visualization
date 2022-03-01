@@ -61,7 +61,8 @@
 
         <h1 class="px-3">/</h1>
         <input
-          v-model="cidr"
+          :value="cidr"
+          @input="setCIDR"
           @keypress="validate"
           min="0"
           max="32"
@@ -163,7 +164,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import { ref } from "@vue/reactivity";
-import { watch } from "@vue/runtime-core";
 
 // @ts-ignore
 import { computeSubnet } from "compute-subnet";
@@ -183,15 +183,17 @@ function validate(e: KeyboardEvent) {
   }
 }
 
-watch(cidr, (newValue: number, oldValue: number) => {
-  if (!newValue) {
-    cidr.value = 0;
-  } else if (newValue > 32) {
-    cidr.value = oldValue;
+function setCIDR(e: Event) {
+  let valid = cidr.value;
+  const data = parseInt((e.target as HTMLInputElement).value);
+
+  if (data >= 0 && data <= 32) {
+    valid = data;
   }
 
+  cidr.value = valid;
   subnet.value = computeSubnet(ipv4.value, cidr.value);
-});
+}
 
 function setIPv4Segment(e: Event, index: number) {
   const valid = [...ipv4.value];
