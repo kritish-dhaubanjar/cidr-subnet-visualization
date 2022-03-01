@@ -1,6 +1,7 @@
-# subnet-visualizer
+# cidr-subnet-visualization 
 
-![image](https://user-images.githubusercontent.com/25634165/156204401-3167dae2-6edc-457e-a905-adac4c80efc2.png)
+![image](https://user-images.githubusercontent.com/25634165/156218931-86b4aeb6-c2b0-41d3-b855-a073080e0aa5.png)
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
