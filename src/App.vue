@@ -189,6 +189,8 @@ function setCIDR(e: Event) {
 
   if (data >= 0 && data <= 32) {
     valid = data;
+  } else if (isNaN(data)) {
+    valid = 0;
   }
 
   cidr.value = valid;
@@ -201,6 +203,8 @@ function setIPv4Segment(e: Event, index: number) {
 
   if (data >= 0 && data <= 255) {
     valid[index] = data;
+  } else if (isNaN(data)) {
+    valid[index] = 0;
   }
 
   ipv4.value = valid;
