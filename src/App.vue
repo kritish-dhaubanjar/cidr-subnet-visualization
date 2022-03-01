@@ -143,12 +143,19 @@
       </div>
     </div>
 
-    <center class="mt-5">
+    <p class="mt-5 text-center">
       <em
         >* For routing mask values &lt;= 30, first and last IPs are base and
         broadcast addresses and are unusable.</em
       >
-    </center>
+      <br />
+      <span class="small text-end">
+        Inspired from
+        <a href="https://github.com/yuvadm/cidr.xyz" target="_blank"
+          >https://cidr.xyz</a
+        >.
+      </span>
+    </p>
   </div>
 </template>
 
