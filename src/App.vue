@@ -153,10 +153,15 @@
 </template>
 
 <script setup lang="ts">
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
 import { ref } from "@vue/reactivity";
 import { watch } from "@vue/runtime-core";
+
+// @ts-ignore
 import { computeSubnet } from "compute-subnet";
 
+// @ts-ignore
 import Segment from "./components/Segment.vue";
 
 const NUMBERS = /[0-9/]+/;
@@ -181,7 +186,7 @@ watch(cidr, (newValue: number, oldValue: number) => {
   subnet.value = computeSubnet(ipv4.value, cidr.value);
 });
 
-function setIPv4Segment(e: InputEvent, index: number) {
+function setIPv4Segment(e: Event, index: number) {
   const valid = [...ipv4.value];
   const data = parseInt((e.target as HTMLInputElement).value);
 
