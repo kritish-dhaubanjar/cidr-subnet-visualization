@@ -1,5 +1,7 @@
 # subnet-visualizer
 
+![image](https://user-images.githubusercontent.com/25634165/156204401-3167dae2-6edc-457e-a905-adac4c80efc2.png)
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
