@@ -146,7 +146,7 @@
 
     <p class="mt-5 text-center">
       <em
-        >* For routing mask values &lt;= 30, first and last IPs are base and
+        >* For routing mask values &gt;= 31, first and last IPs are network and
         broadcast addresses and are unusable.</em
       >
       <br />

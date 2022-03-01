@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "compute-subnet": "^1.0.1",
+    "compute-subnet": "^1.0.2",
     "sass": "^1.49.9",
     "vue": "^3.2.31"
   },
