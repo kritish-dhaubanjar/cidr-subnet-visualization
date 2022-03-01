@@ -1,7 +1,7 @@
 <template>
   <a
     class="github-fork-ribbon"
-    href="https://url.to-your.repo"
+    href="https://github.com/kritish-dhaubanjar/cidr-subnet-visualization"
     data-ribbon="Fork me on GitHub"
     title="Fork me on GitHub"
     >Fork me on GitHub</a
