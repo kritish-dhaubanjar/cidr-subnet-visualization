@@ -255,10 +255,6 @@ function setIPv4Segment(e: Event, index: number) {
   ipv4.value = valid;
   subnet.value = computeSubnet(ipv4.value, cidr.value);
 }
-
-watch(ipv4, (value, oldValue) => {
-  console.log({ value, oldValue });
-});
 </script>
 
 <style lang="scss">
