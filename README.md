@@ -2,6 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/25634165/156218931-86b4aeb6-c2b0-41d3-b855-a073080e0aa5.png)
 
+### Usage
+
+https://user-images.githubusercontent.com/25634165/156590969-a61217fa-39bf-4988-9075-7e3def69d1e0.mp4
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
